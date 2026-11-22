@@ -1,0 +1,6 @@
+{
+  "name": "Champ Libre",
+  "description": "Agrégateur d’articles francophones sans péage — L’info sans péage. Les idées qui comptent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
