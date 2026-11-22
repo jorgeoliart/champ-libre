@@ -6,6 +6,7 @@ import { CATEGORIES, type Article, type ArticlesResponse, type Category } from '
 
 interface FeedSource {
   name: string;
+  url?: string;
   feedUrls: string[];
 }
 
@@ -75,11 +76,11 @@ export const FEED_SOURCES: FeedSource[] = [
     ],
   },
   {
-    name: 'Orient XXI',
+    name: 'Middle East Eye',
+    url: 'https://www.middleeasteye.net/fr',
     feedUrls: [
-      'https://orientxxi.info/spip.php?page=backend',
-      'https://orientxxi.info/?page=backend',
-      'https://orientxxi.info/spip.php?page=backend&lang=fr',
+      'https://www.middleeasteye.net/fr/rss',
+      'https://www.middleeasteye.net/fr/rss.xml',
     ],
   },
   {
@@ -114,11 +115,9 @@ export const FEED_SOURCES: FeedSource[] = [
     ],
   },
   {
-    name: 'RTBF Actus',
-    feedUrls: [
-      'https://rss.rtbf.be/article/rss/highlight_rtbf_info.xml',
-      'https://www.rtbf.be/rss/actualite',
-    ],
+    name: 'BX1',
+    url: 'https://bx1.be',
+    feedUrls: ['https://bx1.be/feed/'],
   },
   {
     name: 'TV5MONDE',
