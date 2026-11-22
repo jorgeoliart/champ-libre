@@ -15,7 +15,8 @@ export interface FailedFeedDiagnostic {
 }
 
 const FEED_HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (compatible; ChampLibre/1.0; +https://champlibre.app)',
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
   Accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8',
   'Accept-Language': 'fr-FR,fr;q=0.9',
 };
@@ -83,7 +84,10 @@ export const FEED_SOURCES: FeedSource[] = [
   },
   {
     name: 'Franceinfo',
-    feedUrls: ['https://www.francetvinfo.fr/titres.rss'],
+    feedUrls: [
+      'https://www.franceinfo.fr/titres.rss',
+      'https://www.francetvinfo.fr/titres.rss',
+    ],
   },
   {
     name: 'France 24',
@@ -127,7 +131,7 @@ export const FEED_SOURCES: FeedSource[] = [
 ];
 
 const CACHE_TTL_MS = 20 * 60 * 1000; // 20 minutes
-const FEED_TIMEOUT_MS = 6000; // strict 6s per feed request
+const FEED_TIMEOUT_MS = 12000; // 12s per feed request
 const HTML_TIMEOUT_MS = 2500; // lightweight 2.5s HTML fetch
 const ENRICHMENT_DEADLINE_MS = 3200; // cap total enrichment wall time so API responds swiftly
 const MAX_ITEMS_PER_FEED = 8;
