@@ -76,12 +76,9 @@ export const FEED_SOURCES: FeedSource[] = [
     ],
   },
   {
-    name: 'Middle East Eye',
-    url: 'https://www.middleeasteye.net/fr',
-    feedUrls: [
-      'https://www.middleeasteye.net/fr/rss',
-      'https://www.middleeasteye.net/fr/rss.xml',
-    ],
+    name: 'Global Voices',
+    url: 'https://fr.globalvoices.org',
+    feedUrls: ['https://fr.globalvoices.org/feed/'],
   },
   {
     name: 'Franceinfo',
@@ -115,9 +112,12 @@ export const FEED_SOURCES: FeedSource[] = [
     ],
   },
   {
-    name: 'BX1',
-    url: 'https://bx1.be',
-    feedUrls: ['https://bx1.be/feed/'],
+    name: 'Euronews',
+    url: 'https://fr.euronews.com',
+    feedUrls: [
+      'https://fr.euronews.com/rss',
+      'https://fr.euronews.com/rss?level=theme&name=news',
+    ],
   },
   {
     name: 'TV5MONDE',
